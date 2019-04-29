@@ -2,9 +2,11 @@
 #  Written by A.E.A.E, To be committed on Github
 
 #  Imports
+from random import randint
 from sklearn.datasets import load_digits
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
 
 #  Actual code
 digits = load_digits()
@@ -26,6 +28,7 @@ print("2-\t Print Predictions & Accuracy")
 k1 = input("Select your Option: ")
 
 #  Running Predictions
+pred = classifier.predict(x_test[0].reshape(1, -1))  # Preparing Pred. incase user picked 1
 if k1 == "2":
     i = 0
     while i < 360:
@@ -38,3 +41,10 @@ if k1 == "2":
 #  Checking Accuracy
 acc = classifier.score(x_test, y_test)
 print("Model Accuracy:", acc)
+
+#  Plotting the results
+p = randint(0, 360)  # Picking a random data
+fig = plt.figure('Data Digit', figsize=(6, 6))  # Creates the figure
+plt.imshow(x_test[p].reshape(8, 8), cmap='gray')  # Specifies the graymap and picks the test.
+plt.title('Prediction = {} | Actual = {} | Accuracy = {}%'.format(pred[0], y_test[p], acc*100))
+plt.show()

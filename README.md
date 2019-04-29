@@ -19,7 +19,7 @@ The purpose of this repo is to play around with those for my own fun
 This project uses a number of open source projects to work properly:
 * SKlearn
 * pandas (unused so far)
-* matplotlib (unused so far)
+* matplotlib
 * numpy (unused so far)
 
 
