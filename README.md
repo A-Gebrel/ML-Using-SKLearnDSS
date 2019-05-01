@@ -8,7 +8,7 @@ The purpose of this repo is to play around with those for my own fun
 ### Modules included
   - Logistic Regression
   - K-Nearest Neighour (kNN)
-  - Decision Tree [Unfinished]
+  - Decision Tree
 
 ### Project includes
 
@@ -18,9 +18,7 @@ The purpose of this repo is to play around with those for my own fun
 ### Requirement
 This project uses a number of open source projects to work properly:
 * SKlearn
-* matplotlib
-* pandas (unused so far)
-* numpy (unused so far)
+* matplotlib (unused)
 
 
 ### Last word

@@ -5,7 +5,7 @@
 from random import randint
 from sklearn.datasets import load_digits
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, cross_val_score
 import matplotlib.pyplot as plt
 
 
@@ -30,8 +30,12 @@ print("2-\t Print Predictions & Accuracy")
 k1 = "1"
 
 #  Running Predictions
-pred = classifier.predict(x_test[0].reshape(1, -1))  # Preparing Pred. incase user picked 1
+pred = classifier.predict(x_test)  # Preparing Pred. incase user picked 1
 print("predicted: ", pred[0], ", Actual result: ", y_test[0])
+
+
+#  Running Probabilities
+proba1 = classifier.predict_proba(x_test)
 
 #  Checking Accuracy
 acc2 = classifier.score(x_train, y_train)
@@ -39,6 +43,13 @@ print("Model Accuracy(train):", acc2)
 acc1 = classifier.score(x_test, y_test)
 print("Model Accuracy(test):", acc1)
 
+scores = cross_val_score(LogisticRegression(), x, y, scoring='accuracy', cv=10)
+print (scores)
+print (scores.mean())
+
 #  Plotting the results
-plt.plot(classifier.coef_.T, 'o')
+'''
+plt.scatter(pred, y_test)
+plt.title("Logistic Regression Model")
 plt.show()
+'''

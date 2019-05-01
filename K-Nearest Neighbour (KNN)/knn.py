@@ -18,7 +18,7 @@ y = digits.target
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=0)
 
 #  Creating our classifying module.
-classifier = KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2)
+classifier = KNeighborsClassifier(n_neighbors=4, metric='minkowski', p=2)
 classifier.fit(x_train, y_train)
 
 #  Running Predictions
@@ -41,9 +41,10 @@ for n_neighbors in neighbors_settings:
     test_accuracy.append(clf.score(x_test, y_test))  # Score the model based on the test data
 
 # Visualize results - to help with deciding which n_neigbors yields the best results (n_neighbors=6, in this case)
+'''
 plt.plot(neighbors_settings, training_accuracy, label='Accuracy of the training set')
 plt.plot(neighbors_settings, test_accuracy, label='Accuracy of the test set')
-plt.ylabel('Accuracy')
-plt.xlabel('Number of Neighbors')
-plt.legend()
-plt.show()
+plt.title('Error Rate KNN')
+plt.xlabel('K Value')
+plt.ylabel('Mean Error')
+plt.show()'''
