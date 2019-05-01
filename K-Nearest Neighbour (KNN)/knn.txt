@@ -1,0 +1,34 @@
+n_neighbors=1
+Model Accuracy(train): 100.0
+Model Accuracy(test): 98.33333333333333
+
+n_neighbors=2
+Model Accuracy(train): 99.23451635351427
+Model Accuracy(test): 98.61111111111111
+
+n_neighbors=3
+Model Accuracy(train): 99.16492693110646
+Model Accuracy(test): 98.61111111111111
+
+n_neighbors=4
+Model Accuracy(train): 99.02574808629089
+Model Accuracy(test): 98.05555555555556
+
+n_neighbors=5
+Model Accuracy(train): 99.09533750869868
+Model Accuracy(test): 97.77777777777777
+
+n_neighbors=10
+Model Accuracy(train): 98.8169798190675
+Model Accuracy(test): 96.94444444444444
+
+n_neighbors=15
+Model Accuracy(train): 98.46903270702853
+Model Accuracy(test): 97.5
+
+n_neighbors=20
+Model Accuracy(train): 97.98190675017398
+Model Accuracy(test): 96.94444444444444
+
+
+best accuracy [n_neighbors=2]

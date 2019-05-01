@@ -1,0 +1,57 @@
+max_depth=1
+Model Accuracy(train): 19.90257480862909
+Model Accuracy(test): 19.444444444444446
+
+max_depth=2
+Model Accuracy(train): 31.732776617954073
+Model Accuracy(test): 32.5
+
+max_depth=3
+Model Accuracy(train): 46.764091858037574
+Model Accuracy(test): 49.166666666666664
+
+max_depth=4
+Model Accuracy(train): 57.55045233124565
+Model Accuracy(test): 56.94444444444444
+
+max_depth=5
+Model Accuracy(train): 67.71050800278357
+Model Accuracy(test): 67.22222222222223
+
+max_depth=6
+Model Accuracy(train): 80.02783576896312
+Model Accuracy(test): 77.22222222222223
+
+max_depth=7
+Model Accuracy(train): 88.93528183716074
+Model Accuracy(test): 84.16666666666667
+
+max_depth=8
+Model Accuracy(train): 91.64926931106471
+Model Accuracy(test): 84.44444444444444
+
+max_depth=9
+Model Accuracy(train): 94.85038274182325
+Model Accuracy(test): 85.83333333333333
+
+max_depth=10
+Model Accuracy(train): 96.93806541405706
+Model Accuracy(test): 85.55555555555556
+
+max_depth=11
+Model Accuracy(train): 98.60821155184412
+Model Accuracy(test): 86.66666666666667
+
+max_depth=12
+Model Accuracy(train): 99.51287404314544
+Model Accuracy(test): 86.11111111111111
+
+max_depth=13
+Model Accuracy(train): 99.86082115518441
+Model Accuracy(test): 87.22222222222223
+
+max_depth=14>20
+Model Accuracy(train): 100.0
+Model Accuracy(test): 87.77777777777777
+
+best accuracy [max_depth=14]
